@@ -4,6 +4,7 @@ import Agreement from './components/Agreement';
 import GridLoader from 'react-spinners/GridLoader';
 import ErrorBoundary from './components/ErrorBoundary';
 import Status from './components/Status';
+import Gnar from './components/Gnar';
 import './App.css';
 const Main = lazy(()=> import('./components/Main'));
 
@@ -23,6 +24,7 @@ const App=()=> {
     <Suspense fallback={<GridLoader />}>
       <ErrorBoundary>
         <Status />
+        <Gnar />
       </ErrorBoundary>
     </Suspense>
   )

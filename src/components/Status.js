@@ -1,7 +1,11 @@
 import React from 'react';
 
 const loadStatus = (function() {
-    let error, promise, response;
+    let error, response;
+    const promise = new Promise(resolves => setTimeout(resolves, 3000)
+    )
+    .then(()=> (response = "success"))
+    .catch(e => (error = e));
 
     return function() {
         if (error) throw error;
