@@ -1,0 +1,11 @@
+body {
+  background: #eaeae3;
+  font-family: sans-serif;
+}
+
+.error {
+  background-color: #efacac;
+  border: double 4px darkred;
+  color: darkred;
+  padding: 1em;
+}
